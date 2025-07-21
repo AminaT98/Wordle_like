@@ -5839,13 +5839,13 @@ function test(w,l) {
 function result(w,l){
     if(l <= 6 && w === word){
         document.removeEventListener("keydown",add);
-        document.getElementById("popup").innerHTML = "<p id='verdict'>&#x1F389; YOU WON! &#x1F389; </p>" + "<img src='leo-celebrate-gif.webp' alt='good job!' id='GJ'>"  + "<button id='ok' onclick='ok()'> Okay </button>"; 
+        document.getElementById("popup").innerHTML = "<p id='verdict'>&#x1F389; YOU WON! &#x1F389; </p>" + "<img src='assets/leo-celebrate-gif.webp' alt='good job!' id='GJ'>"  + "<button id='ok' onclick='ok()'> Okay </button>"; 
         document.getElementById('popup').style.visibility = 'visible';
 
        
     }else if(l >= 6 && w != word){
         document.removeEventListener("keydown",add);
-        document.getElementById("popup").innerHTML = "<p id='verdict'>YOU LOST! &#128542;</p>" + "<img src='not_judging.gif' alt='No judging' id='GJ'>" + "<button id='ok' onclick='ok()'> Okay </button>";
+        document.getElementById("popup").innerHTML = "<p id='verdict'>YOU LOST! &#128542;</p>" + "<img src='assets/not_judging.gif' alt='No judging' id='GJ'>" + "<button id='ok' onclick='ok()'> Okay </button>";
         document.getElementById('popup').style.visibility = 'visible';
        
     }

@@ -90,3 +90,6 @@ address{
     justify-content: center;
     display: flex;
 }
+input[type="text"]{
+    visibility: hidden;
+}

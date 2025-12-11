@@ -91,5 +91,13 @@ address{
     display: flex;
 }
 input[type="text"]{
-    visibility: hidden;
+    background-color: black;
+    width: 5px;
+    border: none;
+
+}
+input[type="text"]:focus{
+    outline: none;
+    border: none;
+
 }
